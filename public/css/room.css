@@ -1,0 +1,54 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    margin: 0; 
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    justify-items: center;
+    align-content: center;
+    height: 100vh; 
+  }
+  
+  .header {
+    text-align: center; 
+    width: 100%; 
+    padding: 20px 0; 
+  }
+  
+  .user-name-tag{
+    font-size: 1.5em; 
+    color: #333; 
+  
+  }
+  
+  .video-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 15px;
+  }
+  
+  #video-grid {
+    width: 100%; /* Define a largura para 100% */
+    max-width: 960px; /* E/ou uma largura máxima */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 30px;
+    margin: 0; /* Remove qualquer margem */
+  }
+  
+  video {
+    width: 100%;
+    height: auto; /* Mantém a proporção dos vídeos */
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
